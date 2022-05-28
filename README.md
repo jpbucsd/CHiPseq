@@ -29,7 +29,7 @@ contents of get_data.sh:
 
 execution:
 
-bash get_data.sh
+9) bash get_data.sh
 
 purpose:
 
