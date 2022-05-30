@@ -1,10 +1,20 @@
 # CHiPseq
-CHiPseq pipeline for reproduction of figures in:  Comprehensive mapping of the Helicobacter pylori NikR regulon provides new insights in bacterial nickel responses
+CHiPseq pipeline for reproduction of figures in:  Comprehensive mapping of the Helicobacter pylori NikR regulon provides new insights in bacterial nickel responses https://www.nature.com/articles/srep45458
 
 As some later steps can only be performed in linux/ubuntu it is best to do this in a linux shell.
-Download git repository:
+## Optional steps to set up shell:
 
-create a new folder in your computer, and cd to the folder in git bash. then enter the following commands:
+(in git bash)
+0a)wsl --install -d Ubuntu
+0b)wsl -l -v
+
+Open your new ubuntu terminal
+
+0c)sudo apt install git
+0d)sudo apt install make
+
+## Download git repository:
+create a new folder in your computer, and cd to the folder. then enter the following commands:
 
 1) git init
 
@@ -26,6 +36,7 @@ upload changes to github:
 
 8) git push origin (name of current branch (probably main))
 
+## Download reads from SRA accession numbers
 Next to we will download the fastq reads
 The script SRAtools_ubuntu.sh installs the necessary tool fastq-dump. skip if you already have it.
 
@@ -37,6 +48,7 @@ Now to download the reads into a folder called fastq
 
 On windows the script get_data.sh serves as an alternative to step 9 and 10
 
+## Align reads to the reference genome
 Now we want to install the tools BWA and SAMTOOLs to align the fastq reads to the reference genome. The reference genome is already saved into the github repository.
 Skip step 11 if you already have BWA and SAMTOOLS
 
