@@ -1,13 +1,14 @@
 # CHiPseq
 CHiPseq pipeline for reproduction of figures in:  Comprehensive mapping of the Helicobacter pylori NikR regulon provides new insights in bacterial nickel responses
 
+As some later steps can only be performed in linux/ubuntu it is best to do this in a linux shell.
 Download git repository:
 
 create a new folder in your computer, and cd to the folder in git bash. then enter the following commands:
 
-1) git config --global user.email "your email"
+1) git init
 
-2) git init
+2) git config --global user.email "your email"
 
 3) git pull http://github.com/jpbuscd/CHiPseq
 
@@ -25,12 +26,24 @@ upload changes to github:
 
 8) git push origin (name of current branch (probably main))
 
-contents of get_data.sh:
+Next to we will download the fastq reads
+The script SRAtools_ubuntu.sh installs the necessary tool fastq-dump. skip if you already have it.
 
-execution:
+9) bash SRAtools_ubuntu.sh
 
-9) bash get_data.sh
+Now to download the reads into a folder called fastq
 
-purpose:
+10) bash get_reads.sh
 
-this script first installs fastq-dumpo for windows, configures it, and then installs the fastq files using SRA accessions. The loop to download the accessions was created by user eboone1001. when running this, you will have to do user input while SRA tools is being configured. When you are prompted click enter.
+On windows the script get_data.sh serves as an alternative to step 9 and 10
+
+Now we want to install the tools BWA and SAMTOOLs to align the fastq reads to the reference genome. The reference genome is already saved into the github repository.
+Skip step 11 if you already have BWA and SAMTOOLS
+
+11) bash aligner_tools.sh
+
+Now we want to extract and index the reference genome, and use it to perform the alignment for each accession.
+
+12) bash align.sh
+
+The previous command produces 14 bam files, containing the alignment for each accession.
