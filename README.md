@@ -5,12 +5,17 @@ As some later steps can only be performed in linux/ubuntu it is best to do this 
 ## Optional steps to set up shell:
 
 (in git bash)
+
 0a)wsl --install -d Ubuntu
+
 0b)wsl -l -v
+
 
 Open your new ubuntu terminal
 
+
 0c)sudo apt install git
+
 0d)sudo apt install make
 
 ## Download git repository:
@@ -36,7 +41,7 @@ upload changes to github:
 
 8) git push origin (name of current branch (probably main))
 
-note that when pushing from an ubuntu shell, every time you will be prompted for your github username and "password". This is not actually a password and instead . go to github.com and log in to your account. Go to settings, developer settings (bottom of left side of page), personal access tokens, and then create a new token. This token is your password.
+note that when pushing from an ubuntu shell, every time you will be prompted for your github username and "password". This is not actually a password and instead a "token". go to github.com and log in to your account. Go to settings, developer settings (bottom of left side of page), personal access tokens, and then create a new token. This token is your password.
 ## Download reads from SRA accession numbers
 Next to we will download the fastq reads
 The script SRAtools_ubuntu.sh installs the necessary tool fastq-dump. skip if you already have it.
