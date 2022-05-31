@@ -60,3 +60,13 @@ Now we want to extract and index the reference genome, and use it to perform the
 12) bash align.sh
 
 The previous command produces 14 bam files, containing the alignment for each accession.
+
+## Using Homer to analyze the data
+
+Next we want to install Homer and other prerequisite tools. If you already have homer installed then dskip step 13.
+
+13) bash installHomer.sh
+
+Next we will use homer to create tag directories, produce bed files, and identify peaks.
+
+14) bash useHomer.sh
