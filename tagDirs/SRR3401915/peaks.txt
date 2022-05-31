@@ -1,0 +1,45 @@
+# HOMER Peaks
+# Peak finding parameters:
+# tag directory = tagDirs/SRR3401915
+#
+# total peaks = 5
+# peak size = 67
+# peaks found using tags on both strands
+# minimum distance between peaks = 134
+# fragment length = 66
+# genome size = 1663013
+# Total tags = 2953262.0
+# Total tags in peaks = 8760.0
+# Approximate IP efficiency = 0.30%
+# tags per bp = 1.775127
+# expected tags per peak = 118.934
+# maximum tags considered per bp = 177.0
+# effective number of tags used for normalization = 10000000.0
+# Peaks have been centered at maximum tag pile-up
+# FDR rate threshold = 0.001000000
+# FDR effective poisson threshold = 5.245368e-05
+# FDR tag threshold = 164.0
+# number of putative peaks = 3384
+#
+# input tag directory = tagDirs/SRR3401659
+# Fold over input required = 4.00
+# Poisson p-value over input required = 1.00e-04
+# Putative peaks filtered by input = 3189
+#
+# size of region used for local filtering = 10000
+# Fold over local region required = 4.00
+# Poisson p-value over local region required = 1.00e-04
+# Putative peaks filtered by local signal = 190
+#
+# Maximum fold under expected unique positions for tags = 2.00
+# Putative peaks filtered for being too clonal = 0
+#
+# cmd = bin/findPeaks tagDirs/SRR3401915 -i tagDirs/SRR3401659 -style factor -o auto
+#
+# Column Headers:
+#PeakID	chr	start	end	strand	Normalized Tag Count	focus ratio	findPeaks Score	Total Tags	Control Tags (normalized to IP Experiment)	Fold Change vs Control	p-value vs Control	Fold Change vs Local	p-value vs Local	Clonal Fold Change
+NC_011334.1-2	NC_011334.1	9486	9552	+	16415.7	0.549	4801.000000	4858.0	612.5	7.93	0.00e+00	11.39	0.00e+00	0.50
+NC_011334.1-4	NC_011334.1	3566	3632	+	9755.3	0.614	2994.000000	2998.0	464.1	6.46	0.00e+00	6.91	0.00e+00	0.60
+NC_011333.1-7	NC_011333.1	482604	482670	+	2380.4	0.627	729.000000	722.0	156.3	4.62	1.32e-236	5.42	1.29e-264	0.77
+NC_011333.1-3184	NC_011333.1	1063531	1063597	+	575.6	0.654	170.000000	170.0	23.7	7.18	3.69e-84	5.71	4.81e-69	0.91
+NC_011333.1-3254	NC_011333.1	535554	535620	+	535.0	0.610	167.000000	158.0	18.9	8.34	2.52e-87	4.33	2.21e-48	1.03

@@ -1,0 +1,13 @@
+name	Unique Positions	Total Tags
+genome	2132042	13141878.0
+fragmentLengthEstimate=149		
+peakSizeEstimate=149		
+tagsPerBP=7.902451		
+averageTagsPerPosition=6.164		
+medianTagsPerPosition=5		
+averageTagLength=50.952		
+gsizeEstimate=1663013		
+averageFragmentGCcontent=-1.000		
+NC_011333.1	2111423	12567215.0
+NC_011334.1	20619	574663.0
+cmd=bin/makeTagDirectory tagDirs/SRR3401914 SRR3401914.bam		

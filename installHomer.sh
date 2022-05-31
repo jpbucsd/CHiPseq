@@ -11,4 +11,5 @@ perl ${pdir}/configureHomer.pl -install
 
 
 echo "#something for homer" >> .bashrc
-echo "PATH=\$PATH:${pdir}//bin/" >> .bashrc
+echo "export PATH=\$PATH:${pdir}/homer/bin/" >> .bashrc
+
