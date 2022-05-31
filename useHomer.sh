@@ -16,5 +16,5 @@ done < SraAccList.txt
 #as the original paper identifies promoter regions and does not look for histone modifications we will be using the factors style for the homer commands
 while read line; \
 do
-	bin/findPeaks tagdirs/${prefix} -i tagdirs/input -style factor -o auto
+	bin/findPeaks tagDirs/${prefix} -i tagdirs/input -style factor -o auto
 done < SraAccList.txt
